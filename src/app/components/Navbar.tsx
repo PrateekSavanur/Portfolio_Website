@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="mx-auto flex items-center justify-between py-4 px-6">
         {/* Brand */}
         <div className="text-3xl font-bold text-[#E2E8F0] hover:text-[#7DD3FC] transition-colors duration-300">
-          <Link href="/">My Portfolio</Link>
+          <Link href="/">Prateek</Link>
         </div>
 
         {/* Desktop Navigation */}
