@@ -35,7 +35,7 @@ const HomePage = () => {
         <div className=" flex justify-center items-center">
           <div className="relative mt-12 lg:mt-0 w-72 h-72 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 shadow-xl overflow-hidden">
             <Image
-              src="/profile-placeholder.jpg"
+              src="./profile-placeholder.jpg"
               alt="Prateek's Profile"
               layout="fill"
               objectFit="cover"
