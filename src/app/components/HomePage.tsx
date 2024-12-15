@@ -15,19 +15,16 @@ const HomePage = () => {
           <p className="text-xl sm:text-2xl font-light text-gray-300">
             Blockchain Developer | Full-Stack Developer | Tech Enthusiast
           </p>
-
+          <p className="text-xl sm:text-2xl font-light text-gray-300">
+            Have a project in mind? Let’s bring your ideas to life. Reach out
+            for a freelance inquiry! 👇
+          </p>
           <div className="flex flex-wrap justify-center lg:justify-start space-x-4">
             <Link
-              href="/projects"
-              className="inline-block bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-full text-lg text-white shadow-lg transform transition-transform hover:scale-105"
-            >
-              View My Projects
-            </Link>
-            <Link
-              href="https://github.com/PrateekSavanur"
+              href="/contact"
               className="inline-block bg-gradient-to-r from-pink-500 to-yellow-500 px-6 py-3 rounded-full text-lg text-white shadow-lg transform transition-transform hover:scale-105"
             >
-              GitHub
+              Contact Me
             </Link>
           </div>
         </div>
@@ -69,10 +66,10 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <ul className="text-gray-300 space-y-2">
-                  <li>JavaScript</li>
-                  <li>React.js</li>
-                  <li>Node.js, Express.js</li>
-                  <li>MongoDB, GraphQL</li>
+                  <li>Custom Website Development</li>
+                  <li>Full-Stack Applications</li>
+                  <li>API Integrations</li>
+                  <li>Responsive Design</li>
                 </ul>
               </div>
 
@@ -87,10 +84,10 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <ul className="text-gray-300 space-y-2">
-                  <li>Solidity</li>
-                  <li>Hardhat, Ethers.js</li>
-                  <li>Chainlink</li>
-                  <li>Rust, Anchor</li>
+                  <li>Smart Contract Development</li>
+                  <li>DeFi Applications</li>
+                  <li>Token Standards (ERC-20, ERC-721)</li>
+                  <li>Blockchain Security</li>
                 </ul>
               </div>
 
@@ -105,10 +102,10 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <ul className="text-gray-300 space-y-2">
-                  <li>C++</li>
-                  <li>Java</li>
-                  <li>JavaScript</li>
                   <li>Solidity</li>
+                  <li>Rust</li>
+                  <li>Java</li>
+                  <li>Python</li>
                 </ul>
               </div>
 
@@ -123,9 +120,9 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <ul className="text-gray-300 space-y-2">
-                  <li>Version Control: Git, GitHub</li>
-                  <li>Smart Contract Security Auditing</li>
-                  <li>Chainlink Oracles Integration</li>
+                  <li>Jenkins</li>
+                  <li>Git/ GitHub</li>
+                  <li>Basic Python Applications</li>
                 </ul>
               </div>
             </div>

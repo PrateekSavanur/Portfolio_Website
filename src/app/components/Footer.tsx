@@ -4,7 +4,7 @@ export default function Footer() {
       {/* Social Links Section */}
       <div className="flex justify-center items-center space-x-6 mb-4">
         <a
-          href="https://linkedin.com/in/prateek-p-savanur-50b78b24a"
+          href="https://www.linkedin.com/in/prateeksavanur/"
           target="_blank"
           rel="noreferrer"
           className="text-gray-300 hover:text-blue-500 transition duration-300"

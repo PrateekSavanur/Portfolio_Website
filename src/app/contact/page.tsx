@@ -31,13 +31,15 @@ const ContactPage = () => {
       );
 
       console.log(result.text);
-      alert("Message sent successfully!");
+      alert(
+        "Your inquiry has been sent successfully! I'll get back to you soon."
+      );
       setName("");
       setEmail("");
       setMessage("");
     } catch (error) {
       console.error(error);
-      alert("Failed to send the message. Please try again later.");
+      alert("Failed to send your inquiry. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -47,12 +49,12 @@ const ContactPage = () => {
     <div className="min-h-[90vh] bg-gradient-to-b from-gray-900 to-gray-800 text-white pb-8">
       {/* Header */}
       <div className="py-8 text-center">
-        <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600">
-          Get in Touch
+        <h1 className="text-5xl font-bold py-3 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600">
+          Freelance Inquiries
         </h1>
         <p className="text-xl text-gray-300 m-4">
-          I’d love to hear from you! Feel free to reach out via the form below
-          or connect with me on social media.
+          Have a project in mind? Let’s collaborate! Fill out the form below,
+          and I’ll get back to you as soon as possible.
         </p>
       </div>
 
@@ -61,13 +63,13 @@ const ContactPage = () => {
         <div className="max-w-2xl mx-auto bg-gradient-to-r from-[#0F172A] via-[#1A202C] to-[#0F172A] p-8 rounded-lg shadow-lg">
           <div className="mb-6">
             <label htmlFor="name" className="block text-sm font-semibold mb-2">
-              Name
+              Your Name
             </label>
             <input
               type="text"
               id="name"
               name="user_name"
-              placeholder="Your Name"
+              placeholder="Enter your full name"
               className="w-full px-4 py-2 bg-[#1E293B] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -75,13 +77,13 @@ const ContactPage = () => {
           </div>
           <div className="mb-6">
             <label htmlFor="email" className="block text-sm font-semibold mb-2">
-              Email
+              Your Email
             </label>
             <input
               type="email"
               id="email"
               name="user_email"
-              placeholder="Your Email"
+              placeholder="Enter your email address"
               className="w-full px-4 py-2 bg-[#1E293B] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -92,12 +94,12 @@ const ContactPage = () => {
               htmlFor="message"
               className="block text-sm font-semibold mb-2"
             >
-              Message
+              Project Details
             </label>
             <textarea
               id="message"
               name="message"
-              placeholder="Your Message"
+              placeholder="Describe your project or requirements in detail"
               className="w-full px-4 py-2 bg-[#1E293B] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -110,7 +112,7 @@ const ContactPage = () => {
             }`}
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
+            {isSubmitting ? "Sending..." : "Submit Inquiry"}
           </button>
         </div>
       </div>
